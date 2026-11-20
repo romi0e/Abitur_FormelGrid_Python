@@ -37,34 +37,53 @@ def _(FormulaDAG, mo):
     firstStats = mo.ui.anywidget(
         widget=FormulaDAG(
             {
-            "q": r" q = 1 \ Coulomb",
-            "r": r" r = 1 \ m ",
+            "q": r" q = 1 \ Coulomb(Ladungsanhäufung)",
+            "r": r" r = 1 \ m(Abstand)",
+            "E": r" E = 1 \ J(Energie)",
+            "U": r" U = 1 \ V(Spannung)",
 
             "I_t": r" I(t) = \use{q}'(t)",
-            "U_q": r" U(q) = \use{E}'(\use{q})",
+            "U_q": r" U(q) = \use{E_f}'(\use{q})",
 
-            "F": r" F = \use{E} \cdot \use{q} ",
-            "E": r" \note{E} E = \frac{1}{4 \pi \epsilon_0} \cdot \frac{\use{q}}{\use{r}^2} \vec{r}",
+            "F": r" F = \use{E_f} \cdot \use{q} ",
+            "E_f": r" \note{E} E = \frac{1}{4 \pi \epsilon_0} \cdot \frac{\use{q}}{\use{r}^2} \vec{r}",
             "F_c": r" \note{Fc} F_e = \frac{1}{4 \pi \epsilon_0} \cdot \frac{|\use{q}_1 \cdot q_2|}{\use{r}^2}",
             "phi": r" \note{phi} \phi = \frac{\use{W}}{\use{q}}",
-            "W": r" W = \int \use{F_c} dr",
+            "W": r" W = \use{E} = \int \use{F_c} dr",
 
             "W_c": r" \note{HF} U = \use{W} \cdot d",
-            "U": r" U = \Delta \use{phi}",
+            "U_p": r" U = \Delta \use{phi}",
 
-            "C": r" \note{C} C = \frac{\use{q}}{\use{U}}",
+            "U_c": r" \note{U_c} U_c = 1 \ V",
+            "Q": r" Q = 1 \ Coulomb(Kondensatorladung)",
+            "C": r" \note{C} C = \frac{\use{Q}}{\use{U_c}}",
             "C_p": r" \note{C_p} C_p = \use{C} = \epsilon_0 \epsilon_r \frac{A}{d}",
             "C_s": r" \note{C_s} C_s = \use{C} = \epsilon_0 \epsilon_r 4 \pi r",
+
+            "C_gesp": r" \note{C_para} C_{ges} = \sum \use{C} \ , \ Q_{ges} = \sum \use{Q}",
+            "C_gesr": r" \note{C_reih} C_{ges} = [ \sum \use{C}^{-1} ]^{-1} \ , Q_1 = \use{Q}_n",
+
+            "E_c": r" E = \frac{1}{2} \use{U_c} \use{Q} = \frac{1}{2} \use{C} \use{U_c}^2 = \frac{1}{2} \frac{\use{Q}^2}{\use{C}}",
+
+
 
 
             },
             notes={"E": "Elektrisches Feld(Punktladung):",
                     "Fc": "Coulomb Kraft:",
+
                     "phi": "Elektrisches Potential:",
                     "HF": "Potential im homologen Feld:",
+
+                    "U_c": "Spannung am Kondensator",
                     "C": "Kapazität eines Kondensators",
                     "C_p": "Plattenkondensator",
                     "C_s": "Kugelkondensator",
+
+                    "C_para": "Kondensator - Parallelschaltung",
+                    "C_reih": "Kondensator - Reihenschaltung",
+
+                    "E_c": "Energie am Kondensator",
                 },
 
 
