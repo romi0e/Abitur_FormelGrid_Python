@@ -32,6 +32,19 @@
       "console": []
     },
     {
+      "id": "2e399fa9-1599-4a0e-b98a-a4131e7ed0fc",
+      "code_hash": "c003fd1904defe04feac5b92c2e60f68",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='2e399fa9-1599-4a0e-b98a-a4131e7ed0fc-0' random-id='e95cba1f-3e55-81b6-4ca0-6882bf3b325e'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;33e242f139e649869c4c128aade4118c&quot;}' data-label='null' data-model-id='&quot;33e242f139e649869c4c128aade4118c&quot;'></marimo-anywidget></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
       "id": "vblA",
       "code_hash": "8f328e52c09a707bd1c213a079e50c24",
       "outputs": [

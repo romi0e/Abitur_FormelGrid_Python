@@ -18,6 +18,7 @@ def _():
         sys.path.insert(0, str(repo_root))
 
     from wigglystuff import EsmWidget, FormulaDAG
+    from wigglystuff import ObservablePlot, TangleLatex
 
     return FormulaDAG, mo
 
@@ -25,8 +26,54 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    Induktion
+    Elektromagnetismus
     """)
+    return
+
+
+@app.cell
+def _(FormulaDAG, mo):
+    from tkinter import E
+    firstStats = mo.ui.anywidget(
+        widget=FormulaDAG(
+            {
+            "q": r" q = 1 \ Coulomb",
+            "r": r" r = 1 \ m ",
+
+            "I_t": r" I(t) = \use{q}'(t)",
+            "U_q": r" U(q) = \use{E}'(\use{q})",
+
+            "F": r" F = \use{E} \cdot \use{q} ",
+            "E": r" \note{E} E = \frac{1}{4 \pi \epsilon_0} \cdot \frac{\use{q}}{\use{r}^2} \vec{r}",
+            "F_c": r" \note{Fc} F_e = \frac{1}{4 \pi \epsilon_0} \cdot \frac{|\use{q}_1 \cdot q_2|}{\use{r}^2}",
+            "phi": r" \note{phi} \phi = \frac{\use{W}}{\use{q}}",
+            "W": r" W = \int \use{F_c} dr",
+
+            "W_c": r" \note{HF} U = \use{W} \cdot d",
+            "U": r" U = \Delta \use{phi}",
+
+            "C": r" \note{C} C = \frac{\use{q}}{\use{U}}",
+            "C_p": r" \note{C_p} C_p = \use{C} = \epsilon_0 \epsilon_r \frac{A}{d}",
+            "C_s": r" \note{C_s} C_s = \use{C} = \epsilon_0 \epsilon_r 4 \pi r",
+
+
+            },
+            notes={"E": "Elektrisches Feld(Punktladung):",
+                    "Fc": "Coulomb Kraft:",
+                    "phi": "Elektrisches Potential:",
+                    "HF": "Potential im homologen Feld:",
+                    "C": "Kapazität eines Kondensators",
+                    "C_p": "Plattenkondensator",
+                    "C_s": "Kugelkondensator",
+                },
+
+
+
+        
+
+        )
+    )
+    firstStats
     return
 
 
