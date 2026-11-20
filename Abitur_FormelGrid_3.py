@@ -11,8 +11,6 @@ def _():
 
     import marimo as mo
 
-    # Prefer the local checkout so this demo tracks the in-repo FormulaDAG even
-    # before it lands in a published wigglystuff release.
     repo_root = Path(__file__).resolve().parents[1]
     if (repo_root / "wigglystuff").exists():
         sys.path.insert(0, str(repo_root))
