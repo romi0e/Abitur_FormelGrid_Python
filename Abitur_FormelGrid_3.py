@@ -40,9 +40,10 @@ def _(FormulaDAG, mo):
             "q": r" q = 1 \ Coulomb(Ladungsanhäufung)",
             "r": r" r = 1 \ m(Abstand)",
             "E": r" E = 1 \ J(Energie)",
-            "U": r" U = 1 \ V(Spannung)",
 
-            "I_t": r" I(t) = \use{q}'(t)",
+            "U": r" U = \frac{\use{E}}{\use{q}}",
+
+            "I_t": r" I(t) = Q'(t)",
             "U_q": r" U(q) = \use{E_f}'(\use{q})",
 
             "F": r" F = \use{E_f} \cdot \use{q} ",
@@ -63,9 +64,10 @@ def _(FormulaDAG, mo):
             "C_gesp": r" \note{C_para} C_{ges} = \sum \use{C} \ , \ Q_{ges} = \sum \use{Q}",
             "C_gesr": r" \note{C_reih} C_{ges} = [ \sum \use{C}^{-1} ]^{-1} \ , Q_1 = \use{Q}_n",
 
-            "E_c": r" E = \frac{1}{2} \use{U_c} \use{Q} = \frac{1}{2} \use{C} \use{U_c}^2 = \frac{1}{2} \frac{\use{Q}^2}{\use{C}}",
+            "E_c": r" \note{E_c} E = \frac{1}{2} \use{U_c} \use{Q} = \frac{1}{2} \use{C} \use{U_c}^2 = \frac{1}{2} \frac{\use{Q}^2}{\use{C}}",
 
-
+            "C_e": r" \note{C_e} 0 = \use{U_c} + U_R \longrightarrow \use{I_t} = - \frac{1}{RC} e^{-\frac{1}{RC}} ",
+            "C_l": r" \note{C_l} U_0 = \use{U_c} + U_R",
 
 
             },
@@ -84,6 +86,9 @@ def _(FormulaDAG, mo):
                     "C_reih": "Kondensator - Reihenschaltung",
 
                     "E_c": "Energie am Kondensator",
+
+                    "C_e": "Entladung Kondensator mit Maschenregel:",
+                    "C_l": "Laden Kondensator mit Maschenregel",
                 },
 
 

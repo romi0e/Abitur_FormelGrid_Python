@@ -33,12 +33,12 @@
     },
     {
       "id": "2e399fa9-1599-4a0e-b98a-a4131e7ed0fc",
-      "code_hash": "4ea2c3fd9b82eb944986d371edfccbaf",
+      "code_hash": "a930b256a905a6dad7f2f1fb5f14ea8e",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='2e399fa9-1599-4a0e-b98a-a4131e7ed0fc-0' random-id='9662deed-a549-37ed-4834-b05edb908982'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;ddc0ef358de3427d859c79acf27cf034&quot;}' data-label='null' data-model-id='&quot;ddc0ef358de3427d859c79acf27cf034&quot;'></marimo-anywidget></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='2e399fa9-1599-4a0e-b98a-a4131e7ed0fc-0' random-id='deb44829-5de4-80ce-c40f-b7fc21eb4533'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;b12ee19279634f64bdde0cd6a1b45139&quot;}' data-label='null' data-model-id='&quot;b12ee19279634f64bdde0cd6a1b45139&quot;'></marimo-anywidget></marimo-ui-element>"
           }
         }
       ],
