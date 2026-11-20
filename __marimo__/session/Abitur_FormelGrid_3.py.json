@@ -20,12 +20,12 @@
     },
     {
       "id": "MJUe",
-      "code_hash": "a132724f2fc0621c840c64687f907edb",
+      "code_hash": "8c55540e12becfb4c1d9eb1855a4bd13",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">mo.md()</span></span>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Induktion</span></span>"
           }
         }
       ],
@@ -33,12 +33,12 @@
     },
     {
       "id": "vblA",
-      "code_hash": "936a0886528fffbd278513c02564d4fb",
+      "code_hash": "8f328e52c09a707bd1c213a079e50c24",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='32e886b4-9e69-4fd1-925e-28ba23e8a6f7'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;f95c6d1a6f1546f580189ee70f8806c2&quot;}' data-label='null' data-model-id='&quot;f95c6d1a6f1546f580189ee70f8806c2&quot;'></marimo-anywidget></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='1c2a74f8-bb76-df33-02e7-04aee17f6ee0'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;f6332b7d15bd49a3985a6935b1bd9e50&quot;}' data-label='null' data-model-id='&quot;f6332b7d15bd49a3985a6935b1bd9e50&quot;'></marimo-anywidget></marimo-ui-element>"
           }
         }
       ],
