@@ -33,14 +33,13 @@ def _(mo):
 
 @app.cell
 def _(FormulaDAG, mo):
-    from tkinter import E
     firstStats = mo.ui.anywidget(
         widget=FormulaDAG(
             {
             "q": r" q = 1 \ Coulomb(Ladungsanhäufung)",
             "r": r" r = 1 \ m(Abstand)",
             "E": r" E = 1 \ J(Energie)",
-        
+    
             "U_R": r" \note{U_R} U_R = R \cdot I",
             "v_0": r" \note{e_b} v_0 = \sqrt{\frac{2eU_b}{m_e}}",
             "U": r" U = \frac{\use{E}}{\use{q}}",
@@ -100,7 +99,7 @@ def _(FormulaDAG, mo):
 
 
 
-    
+
 
         )
     )
