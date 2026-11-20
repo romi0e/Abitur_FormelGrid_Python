@@ -25,7 +25,7 @@ def _():
 @app.cell(hide_code=True)
 def _(mo):
     mo.md(r"""
-    mo.md()
+    Induktion
     """)
     return
 
@@ -35,15 +35,21 @@ def _(FormulaDAG, mo):
     stats = mo.ui.anywidget(
         FormulaDAG(
             {
-                "mu": r"\mu = \frac{1}{n}\sum_{i=1}^{n} x_i",
-                "var": r"\sigma^2 = \frac{1}{n}\sum_{i=1}^{n} (x_i - \use{mu})^2",
-                "sigma": r"\sigma = \sqrt{\use{var}}",
-                "z": {
-                    "tex": r"z_i = \frac{x_i - \use{mu}}{\note{scale}{\use{sigma}}}",
-                    "label": "z-score",
+                "B": r"B = \note{B}",
+                "A": r"A = \note{A}",
+                "n": r"n = \note{n}",
+                "Phi": r"\Phi = \vec{\use{B}} \cdot \vec{\use{A}} \note{flux}",
+                "Induktionsgesetz": r"U_{ind} = -\use{n} \frac{d \use{Phi}}{dt} \note{law}",
+                "Vereinfacht":{
+                    "tex": r"U_{ind} = -n \use{B}(t) \cdot \use{A}'(t)",
+                    "tex": r"U_{ind} = -n \use{B}'(t) \cdot \use{A}(t)",
                 },
             },
-            notes={"scale": "distance measured in standard deviations"},
+            notes={"flux": "(Skalarprodukt)",
+                    "law": "- wegen Lenz'scher Regel",
+                    "A": "Durchsetze Fläche",
+                    "B": "Magnetfeldstärke",
+                    "n": "Windungszahl"},
         )
     )
     stats
