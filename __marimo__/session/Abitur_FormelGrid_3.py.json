@@ -33,12 +33,12 @@
     },
     {
       "id": "vblA",
-      "code_hash": "86ac03ff82351498a8feed2a684523f0",
+      "code_hash": "af481d5317900fb83b98a0370db99464",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='c13a8777-142f-d4b2-8b21-efc565505de9'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;dbd4140234f94aab950d30b184658d4b&quot;}' data-label='null' data-model-id='&quot;dbd4140234f94aab950d30b184658d4b&quot;'></marimo-anywidget></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='a6ba0b0e-0ec1-38ae-f652-f9a647e36724'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;026c5b562e864fa2902d4b194344fdad&quot;}' data-label='null' data-model-id='&quot;026c5b562e864fa2902d4b194344fdad&quot;'></marimo-anywidget></marimo-ui-element>"
           }
         }
       ],
@@ -47,7 +47,14 @@
     {
       "id": "bkHC",
       "code_hash": "8f328e52c09a707bd1c213a079e50c24",
-      "outputs": [],
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='bkHC-0' random-id='8d2ce147-aee2-9cdd-8393-876fb5729714'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;8cac41722df841fba6e001c29fef9f85&quot;}' data-label='null' data-model-id='&quot;8cac41722df841fba6e001c29fef9f85&quot;'></marimo-anywidget></marimo-ui-element>"
+          }
+        }
+      ],
       "console": []
     }
   ]

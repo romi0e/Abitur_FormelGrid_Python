@@ -68,8 +68,8 @@ def _(FormulaDAG, mo):
 
             "E_c": r" \note{E_c} E = \frac{1}{2} \use{U_c} \use{Q} = \frac{1}{2} \use{C} \use{U_c}^2 = \frac{1}{2} \frac{\use{Q}^2}{\use{C}}",
 
-            "C_e": r" \note{C_e} 0 = \use{U_c} + U_R \longrightarrow Q(t) = e^{-\frac{1}{RC}} ",
-            "C_l": r" \note{C_l} U_0 = \use{U_c} + U_R \longrightarrow Q(t) = Q_0(1-e^{-\frac{1}{RC}})",
+            "C_e": r" \note{C_e} 0 = \use{U_c} + \use{U_R} \longrightarrow Q(t) = e^{-\frac{1}{RC}} ",
+            "C_l": r" \note{C_l} U_0 = \use{U_c} + \use{U_R} \longrightarrow Q(t) = Q_0(1-e^{-\frac{1}{RC}})",
 
 
             },
