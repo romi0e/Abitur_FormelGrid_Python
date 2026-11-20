@@ -40,7 +40,9 @@ def _(FormulaDAG, mo):
             "q": r" q = 1 \ Coulomb(Ladungsanhäufung)",
             "r": r" r = 1 \ m(Abstand)",
             "E": r" E = 1 \ J(Energie)",
-
+        
+            "U_R": r" \note{U_R} U_R = R \cdot I",
+            "v_0": r" \note{e_b} v_0 = \sqrt{\frac{2eU_b}{m_e}}",
             "U": r" U = \frac{\use{E}}{\use{q}}",
 
             "I_t": r" I(t) = Q'(t)",
@@ -56,7 +58,7 @@ def _(FormulaDAG, mo):
             "U_p": r" U = \Delta \use{phi}",
 
             "U_c": r" \note{U_c} U_c = 1 \ V",
-            "Q": r" Q = 1 \ Coulomb(Kondensatorladung)",
+            "Q": r" \note{Q_c} Q = 1 \ Coulomb",
             "C": r" \note{C} C = \frac{\use{Q}}{\use{U_c}}",
             "C_p": r" \note{C_p} C_p = \use{C} = \epsilon_0 \epsilon_r \frac{A}{d}",
             "C_s": r" \note{C_s} C_s = \use{C} = \epsilon_0 \epsilon_r 4 \pi r",
@@ -66,13 +68,15 @@ def _(FormulaDAG, mo):
 
             "E_c": r" \note{E_c} E = \frac{1}{2} \use{U_c} \use{Q} = \frac{1}{2} \use{C} \use{U_c}^2 = \frac{1}{2} \frac{\use{Q}^2}{\use{C}}",
 
-            "C_e": r" \note{C_e} 0 = \use{U_c} + U_R \longrightarrow \use{I_t} = - \frac{1}{RC} e^{-\frac{1}{RC}} ",
-            "C_l": r" \note{C_l} U_0 = \use{U_c} + U_R",
+            "C_e": r" \note{C_e} 0 = \use{U_c} + U_R \longrightarrow Q(t) = e^{-\frac{1}{RC}} ",
+            "C_l": r" \note{C_l} U_0 = \use{U_c} + U_R \longrightarrow Q(t) = Q_0(1-e^{-\frac{1}{RC}})",
 
 
             },
             notes={"E": "Elektrisches Feld(Punktladung):",
                     "Fc": "Coulomb Kraft:",
+
+                    "U_R": "Spannung am Resistor",
 
                     "phi": "Elektrisches Potential:",
                     "HF": "Potential im homologen Feld:",
@@ -81,6 +85,7 @@ def _(FormulaDAG, mo):
                     "C": "Kapazität eines Kondensators",
                     "C_p": "Plattenkondensator",
                     "C_s": "Kugelkondensator",
+                    "Q_c": "Ladung am Kondensator",
 
                     "C_para": "Kondensator - Parallelschaltung",
                     "C_reih": "Kondensator - Reihenschaltung",
@@ -89,11 +94,13 @@ def _(FormulaDAG, mo):
 
                     "C_e": "Entladung Kondensator mit Maschenregel:",
                     "C_l": "Laden Kondensator mit Maschenregel",
+
+                    "e_b": "Elektronenbeschleunigung",
                 },
 
 
 
-        
+    
 
         )
     )

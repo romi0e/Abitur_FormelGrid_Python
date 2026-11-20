@@ -7,7 +7,7 @@
   "cells": [
     {
       "id": "Hbol",
-      "code_hash": "9d8b6f6adf9b1bb98fe2cf7b64434e59",
+      "code_hash": "931a89acabcc6f776179c8e2307fc218",
       "outputs": [
         {
           "type": "data",
@@ -20,25 +20,12 @@
     },
     {
       "id": "MJUe",
-      "code_hash": "8c55540e12becfb4c1d9eb1855a4bd13",
+      "code_hash": "7822dad25d245c95cf0d3dead8945158",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Induktion</span></span>"
-          }
-        }
-      ],
-      "console": []
-    },
-    {
-      "id": "2e399fa9-1599-4a0e-b98a-a4131e7ed0fc",
-      "code_hash": "a930b256a905a6dad7f2f1fb5f14ea8e",
-      "outputs": [
-        {
-          "type": "data",
-          "data": {
-            "text/html": "<marimo-ui-element object-id='2e399fa9-1599-4a0e-b98a-a4131e7ed0fc-0' random-id='deb44829-5de4-80ce-c40f-b7fc21eb4533'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;b12ee19279634f64bdde0cd6a1b45139&quot;}' data-label='null' data-model-id='&quot;b12ee19279634f64bdde0cd6a1b45139&quot;'></marimo-anywidget></marimo-ui-element>"
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Elektromagnetismus</span></span>"
           }
         }
       ],
@@ -46,15 +33,21 @@
     },
     {
       "id": "vblA",
-      "code_hash": "8f328e52c09a707bd1c213a079e50c24",
+      "code_hash": "86ac03ff82351498a8feed2a684523f0",
       "outputs": [
         {
           "type": "data",
           "data": {
-            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='1c2a74f8-bb76-df33-02e7-04aee17f6ee0'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;f6332b7d15bd49a3985a6935b1bd9e50&quot;}' data-label='null' data-model-id='&quot;f6332b7d15bd49a3985a6935b1bd9e50&quot;'></marimo-anywidget></marimo-ui-element>"
+            "text/html": "<marimo-ui-element object-id='vblA-0' random-id='c13a8777-142f-d4b2-8b21-efc565505de9'><marimo-anywidget data-initial-value='{&quot;model_id&quot;:&quot;dbd4140234f94aab950d30b184658d4b&quot;}' data-label='null' data-model-id='&quot;dbd4140234f94aab950d30b184658d4b&quot;'></marimo-anywidget></marimo-ui-element>"
           }
         }
       ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "8f328e52c09a707bd1c213a079e50c24",
+      "outputs": [],
       "console": []
     }
   ]
